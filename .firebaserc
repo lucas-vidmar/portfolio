@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "lucas-vidmar-portfolio"
+  },
+  "targets": {
+    "lucas-vidmar-portfolio": {
+      "hosting": {
+        "portfolio": [
+          "lucas-vidmar-portfolio"
+        ]
+      }
+    }
   }
 }
