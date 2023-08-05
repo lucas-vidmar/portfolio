@@ -41,7 +41,7 @@ jobs:
 
       - name: Build
         run: |
-          ng build
+          ng run build
 
       - name: Lint
         run: |      
