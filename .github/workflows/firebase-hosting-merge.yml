@@ -24,7 +24,7 @@ jobs:
       - name: Create environment file
         run: node create_enviroment_file.js
         env:
-          FIREBASE_DETAILS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LUCAS_VIDMAR_PORTFOLIO }}
+          FIREBASE_DETAILS: ${{ secrets.FIREBASE_ENVIROMENT }}
         
 
       - name: Cache node modules
