@@ -13,7 +13,8 @@ jobs:
         node-version: [10.x, 12.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Git checkout
+        uses: actions/checkout@v2
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -26,7 +27,6 @@ jobs:
         env:
           cache-name: cache-node-modules
         with:
-          # caching node_modules
           path: node_modules
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
@@ -44,7 +44,7 @@ jobs:
           npm run build -- --prod
 
       - name: Lint
-        run: |
+        run: |      
           npm run lint
 
       - name: Test
@@ -52,7 +52,7 @@ jobs:
           npm run test -- --prod
           
       - name: Deploy to firebase
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LUCAS_VIDMAR_PORTFOLIO }}'
