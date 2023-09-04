@@ -15,6 +15,7 @@ import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { CardComponent } from './blog/card/card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     ProfileComponent,
     BlogEntryComponent,
     EditorComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,38 @@
+.card{
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    flex-basis: 50%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    img{
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.card .content{
+
+    padding-left: 20px;
+
+    h2{
+        margin: 0;
+    }
+
+    p{
+        margin: 0;
+    }
+    
+    a{
+        color: var(--accent);
+        float: right;
+    }
+}

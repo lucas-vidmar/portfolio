@@ -1,0 +1,32 @@
+h1{
+    margin: 0;
+    font-size: 3rem;
+    line-height: 100px;
+}
+
+h2{
+    margin: 0;
+    color: var(--accent);
+}
+
+.max-width{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+#inline-info{
+    display: flex;
+    flex-direction: row;
+}
+
+#date {
+    color: var(--tertiary);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tag{
+    color: var(--accent);
+}

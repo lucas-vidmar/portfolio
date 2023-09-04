@@ -1,1 +1,19 @@
-<p>blog works!</p>
+<div class="max-width">
+    <h1>Personal Blog</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis accusamus aperiam nihil aliquam ex eveniet dignissimos sed voluptas amet?</h2>
+    
+    <!-- Searchbar and tags -->
+    <div id="search-bar" class="even-separation">
+        <input type="text" id="search" class="pill" (input)="searchbox($event)" placeholder="Search">
+    </div>
+    <ul class="even-separation">
+        <li (click)="toggleTag(tag)" *ngFor="let tag of tags" class="pill" [style.order]="tag.weight" [ngClass]="tag.selected ? 'selected' : ''">{{tag.tag}}</li>
+    </ul>
+
+    <!-- Cards -->
+    <div id="card-container" class="even-separation">
+        <app-card *ngFor="let card of loadedCards" [post]="card"></app-card>
+    </div>
+
+    <h4 *ngIf="loadedCards.length == 0">Oops, didn't find what you were looking for</h4>
+</div>

@@ -1,1 +1,11 @@
-<p>blog-entry works!</p>
+<div class="max-width">
+    <h2>Personal Blog</h2>
+    <h1>{{postinfo?.title}}</h1>
+    <div id="inline-info">
+        <img src="" alt="">
+        Written by&nbsp;<b>{{postinfo?.author}}</b>&nbsp;|
+        <div class="tag" *ngFor="let tag of postinfo?.tags">&nbsp;{{tag.toUpperCase()}}&nbsp;</div>|
+        <div id="date">&nbsp;{{formattedDate}}</div>
+    </div>
+    <p>{{postinfo?.description}}</p>
+</div>

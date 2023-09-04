@@ -5,11 +5,11 @@ export class entry {
     tags: string[];
     author: string;
     image: string;
-    date: Date;
+    date: string;
     description: string;
     content: string;
 
-    constructor(id: string, title: string, tags: string[], author: string, image: string, date: Date, description: string, content: string) {
+    constructor(id: string, title: string, tags: string[], author: string, image: string, date: string, description: string, content: string) {
         this.title = title;
         this.tags = tags;
         this.author = author;
@@ -18,9 +18,5 @@ export class entry {
         this.description = description;
         this.content = content;
         this.id = id;
-    }
-
-    setDateToNow() {
-        this.date = new Date();
     }
 }

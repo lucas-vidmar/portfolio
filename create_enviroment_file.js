@@ -5,7 +5,7 @@ const dir = "src/environments";
 const filename = "environment.ts";
 const prodfilename = "environment.prod.ts";
 
-const envConfigFile = `${process.env.FIREBASE_DETAILS}`;
+const envConfigFile = `{process.env.FIREBASE_DETAILS}`;
 
 fs.access(dir, fs.constants.F_OK, (err) => {
     if (err) {
