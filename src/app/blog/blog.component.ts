@@ -10,7 +10,48 @@ export const test: entry[] = [
     image: 'https://picsum.photos/200/300',
     date: Date.now().toString(),
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, tempore.',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam tempore qui suscipit totam dicta voluptate optio, itaque reprehenderit dolorem. Consectetur quis, minus provident perferendis deleniti vel ab maiores cum!'
+    content: `<h1><span style="font-family:Arial,Helvetica,sans-serif">Hola como estas todo bien que hacias</span></h1>
+
+    <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+      <tbody>
+        <tr>
+          <td>Esto</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>es</td>
+          <td>prueba</td>
+        </tr>
+        <tr>
+          <td>una</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p style="text-align:right">Probando</p>
+    
+    <p style="text-align:center"><a href="https://picsum.photos/200/300"><img alt="" src="https://picsum.photos/200/300" style="float:left" /></a></p>
+    
+    <p style="text-align:center">&nbsp;</p>
+    
+    <p style="text-align:center">&nbsp;</p>
+    
+    <p style="text-align:center">&nbsp;</p>
+    
+    <p style="text-align:center">&nbsp;</p>
+    
+    <p style="text-align:center">&nbsp;</p>
+    
+    <p style="text-align:center">&nbsp;</p>
+    
+    <p style="text-align:center">&nbsp;</p>
+    
+    <p style="text-align:center">&nbsp;</p>
+    
+    <p style="text-align:center">&Ntilde;</p>
+    `
+
   },
   {
     title: 'Test Title 2',

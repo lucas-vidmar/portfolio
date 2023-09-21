@@ -8,4 +8,7 @@
         <div id="date">&nbsp;{{formattedDate}}</div>
     </div>
     <p>{{postinfo?.description}}</p>
+    <div id="content">
+        <div [innerHTML]="postinfo?.content"></div>
+    </div>
 </div>
