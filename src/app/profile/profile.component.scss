@@ -1,20 +1,29 @@
+$mobile-wd: 320px;
 
 html{
     background-color: var(--secondary);
+    color: var(--primary);
+    
+    div{
+        padding: 0;
+    }
 }
 
-#dashboard{
+#table{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-flow: column nowrap;
+
+    .row{
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
 
 .section{
     border: 1px solid var(--accent);
     border-radius: 10px;
     margin: 10px;
-    max-width: 200px;
+    min-width: $mobile-wd;
 
     *{
         margin: 0;
@@ -23,5 +32,71 @@ html{
 
     .body{
         border-top: 1px solid var(--accent);
+    }
+
+    .item{
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .item .header{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+
+        h4{
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-left: 2px solid var(--primary);
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+    }
+
+    .item .subitem{
+        padding: 0;
+        padding-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        h5{
+            padding: 0;
+            color: var(--font);
+        }
+
+        h6{
+            padding: 0;
+            color: var(--font);
+            font-weight: 400;
+        }
+    }
+
+}
+
+#tags{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    li{
+        background-color: var(--accent);
+        color: whitesmoke;
+        border-radius: 7px;
+        display: block;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    li:hover{
+        background-color: var(--secondary);
+        color: var(--accent);
     }
 }
