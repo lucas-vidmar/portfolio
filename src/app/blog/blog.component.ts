@@ -58,7 +58,7 @@ export const test: entry[] = [
     id: 'test2',
     tags: ['tag1', 'tag3'],
     author: 'Lucas Vidmar',
-    image: 'https://picsum.photos/200/300',
+    image: 'https://picsum.photos/300/300',
     date: Date.now().toString(),
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, tempore.',
     content: 'Lorem ipsum dolor prueba sit amet consectetur adipisicing elit. Laudantium ullam tempore qui suscipit totam dicta voluptate optio, itaque reprehenderit dolorem. Consectetur quis, minus provident perferendis deleniti vel ab maiores cum!'
@@ -68,7 +68,7 @@ export const test: entry[] = [
     id: 'test3',
     tags: ['tag1', 'tag4'],
     author: 'Lucas Vidmar',
-    image: 'https://picsum.photos/200/300',
+    image: 'https://picsum.photos/300/200',
     date: Date.now().toString(),
     description: 'Lorem ipsum dolor sit amet probation consectetur adipisicing elit. Omnis, tempore.',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam tempore qui suscipit totam dicta voluptate optio, itaque reprehenderit dolorem. Consectetur quis, minus provident perferendis deleniti vel ab maiores cum!'

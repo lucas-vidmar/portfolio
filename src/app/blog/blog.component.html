@@ -11,8 +11,8 @@
     </ul>
 
     <!-- Cards -->
-    <div id="card-container" class="even-separation">
-        <app-card *ngFor="let card of loadedCards" [post]="card"></app-card>
+    <div id="card-container" *ngFor="let card of loadedCards" class="even-separation">
+        <app-card [post]="card"></app-card>
     </div>
 
     <h4 *ngIf="loadedCards.length == 0">Oops, didn't find what you were looking for</h4>

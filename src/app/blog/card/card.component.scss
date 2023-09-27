@@ -1,37 +1,38 @@
-.card{
+.card {
     border: 1px solid var(--accent);
     border-radius: 20px;
-    outline: none;
-    margin-bottom: 20px;
     padding: 20px;
-    flex-basis: 50%;
+    height: 200px;
+    width: auto;
 
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
+    align-items: flex-end;
 
     img{
-        width: 120px;
-        height: 120px;
-        border-radius: 20px;
+        height: 100%;
+        width: 40%;
+        display: block;
         object-fit: cover;
         object-position: center center;
+
+        border-radius: 20px;
     }
 }
 
-.card .content{
-
+.card .content {
     padding-left: 20px;
+    width: 60%;
 
-    h2{
+    h2 {
         margin: 0;
     }
 
-    p{
+    p {
         margin: 0;
     }
-    
-    a{
+
+    a {
         color: var(--accent);
         float: right;
     }

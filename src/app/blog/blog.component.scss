@@ -5,7 +5,7 @@ h1{
     font-size: 4rem;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 60px;
 }
 
 h2{
@@ -14,6 +14,7 @@ h2{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin-top: 20px;
 }
 
 ul{
@@ -33,7 +34,7 @@ li{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     &:hover{
-        background: var(--accent);
+        background: var(--font);
         color: var(--secondary);
     }
 }
@@ -47,6 +48,7 @@ li{
         width: auto;
         width: -webkit-fill-available;
         padding: 10px;
+        background-color: transparent;
     }
 }
 
@@ -54,14 +56,9 @@ li{
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 20px;
-    border: 1px solid var(--accent);
+    border: 1px solid var(--font);
     border-radius: 20px;
     outline: none;
-}
-
-#card-container{
-    display: flex;
-    flex-flow: row wrap;
 }
 
 .even-separation{
@@ -70,6 +67,6 @@ li{
 }
 
 .selected{
-    background-color: var(--accent);
+    background-color: var(--font);
     color: var(--secondary);
 }
