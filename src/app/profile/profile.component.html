@@ -1,3 +1,4 @@
+
 <div class="max-width">
     <!-- Header -->
     <h1>My Profile</h1>
@@ -6,10 +7,10 @@
         <br>
         this is the section you are looking for.
     </h4>
-</div>
 
-<div id="table">
-    <div class="row">
+    <!-- Profile -->
+    <div id="grid">
+        <!-- Education -->
         <div class="section">
             <h3>Education</h3>
             <div class="body">
@@ -50,6 +51,7 @@
                 </div>
             </div>
         </div>
+        <!-- Skills -->
         <div class="section">
             <h3>Skills</h3>
             <div class="body">
@@ -58,8 +60,9 @@
                 </ul>
             </div>
         </div>
+        <!-- Work Experience -->
         <div class="section">
-            <h3>Education</h3>
+            <h3>Work Experience</h3>
             <div class="body">
                 <div class="item">
                     <div class="header">
@@ -109,15 +112,17 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
+        <!-- Languages -->
         <div class="section">
-            <h3>Work experience</h3>
+            <h3>Languages</h3>
             <div class="body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sunt officia officiis mollitia! Itaque dolore harum totam provident a sed voluptates. Ullam dolorum, adipisci voluptate vitae provident quia porro fuga.
+                <ul id="tags">
+                    <li *ngFor="let lang of languages">{{lang}}</li>
+                </ul>
             </div>
         </div>
-        <div class="section">
+        <!-- Other -->
+        <div class="section" id="double-column">
             <h3>Work experience</h3>
             <div class="body">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sunt officia officiis mollitia! Itaque dolore harum totam provident a sed voluptates. Ullam dolorum, adipisci voluptate vitae provident quia porro fuga.

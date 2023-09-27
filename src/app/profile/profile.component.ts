@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
+  ww = window.innerWidth;
+
   tags = [
     "Python",
     "HTML",
@@ -40,6 +42,14 @@ export class ProfileComponent {
     "Linux",
     "SolidWorks",
     "AutoCAD"
+  ]
+
+  languages = [
+    "English | Native",
+    "Spanish | Native",
+    "Italian | Basic",
+    "German | Basic",
+    "Chinese | Basic"
   ]
 
   constructor() {
