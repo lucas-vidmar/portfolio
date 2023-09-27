@@ -16,6 +16,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { CardComponent } from './blog/card/card.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CardComponent } from './blog/card/card.component';
     BlogEntryComponent,
     EditorComponent,
     NotfoundComponent,
-    CardComponent
+    CardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

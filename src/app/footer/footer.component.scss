@@ -1,0 +1,13 @@
+#footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    color: var(--font);
+    font-weight: 400;
+    font-style: normal;
+    
+    border-top: 1px solid var(--font);
+}
